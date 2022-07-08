@@ -6,7 +6,6 @@ use App\Filament\Resources\PostResource;
 use App\Filament\Resources\PostResource\Widgets\StatsOverview;
 use Filament\Pages\Actions;
 use Filament\Resources\Pages\ListRecords;
-use Filament\Widgets\StatsOverviewWidget;
 
 class ListPosts extends ListRecords
 {
@@ -22,7 +21,7 @@ class ListPosts extends ListRecords
     protected function getHeaderWidgets(): array
     {
         return [
-            StatsOverview::class
+            StatsOverview::class,
         ];
     }
 }

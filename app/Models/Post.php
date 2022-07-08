@@ -2,7 +2,6 @@
 
 namespace App\Models;
 
-use Illuminate\Console\Concerns\InteractsWithIO;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Spatie\MediaLibrary\HasMedia;
@@ -12,9 +11,9 @@ class Post extends Model implements HasMedia
 {
     use HasFactory, InteractsWithMedia;
 
-    protected $fillable = ['category_id','title','slug','content','is_published'];
+    protected $fillable = ['category_id', 'title', 'slug', 'content', 'is_published'];
 
-    protected $casts = [ 
+    protected $casts = [
         'is_published' => 'boolean',
     ];
 
